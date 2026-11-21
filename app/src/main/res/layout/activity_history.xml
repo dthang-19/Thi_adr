@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:background="@color/white" xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical" android:padding="@dimen/pad">
+
+    <TextView
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:background="@drawable/bg_button" android:gravity="center"
+        android:padding="@dimen/pad" android:text="@string/title_history"
+        android:textColor="@color/white" android:textSize="@dimen/text_title"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/tvThongKe"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/gap" android:background="@drawable/bg_card"
+        android:textColor="@color/text_dark" android:textSize="@dimen/text_body"
+        android:textStyle="bold"/>
+
+    <ListView
+        android:id="@+id/lvHoaDon"
+        android:layout_width="match_parent" android:layout_height="0dp"
+        android:layout_marginTop="@dimen/gap" android:layout_weight="1"/>
+
+    <TextView
+        android:id="@+id/tvTrong"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:gravity="center" android:padding="@dimen/pad"
+        android:text="@string/empty_history" android:textColor="@color/text_dark" android:visibility="gone"/>
+</LinearLayout>

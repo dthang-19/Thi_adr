@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:background="@color/white" xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="vertical" android:padding="@dimen/pad">
+
+        <TextView
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:background="@drawable/bg_button" android:gravity="center"
+            android:padding="@dimen/pad" android:text="@string/title_result"
+            android:textColor="@color/white" android:textSize="@dimen/text_title"
+            android:textStyle="bold"/>
+
+        <LinearLayout
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/pad" android:background="@drawable/bg_card"
+            android:orientation="vertical">
+            <TextView android:id="@+id/tvMaKH" style="@style/InfoLine"/>
+            <TextView android:id="@+id/tvTenChuHo" style="@style/InfoLine"/>
+            <TextView android:id="@+id/tvLoaiKH" style="@style/InfoLine"/>
+            <TextView android:id="@+id/tvChiSo" style="@style/InfoLine"/>
+            <TextView android:id="@+id/tvNgayLap" style="@style/InfoLine"/>
+        </LinearLayout>
+
+        <TableLayout
+            android:id="@+id/bangChiTiet"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/pad" android:stretchColumns="*">
+
+            <TableRow android:background="@color/primary">
+                <TextView style="@style/CellHeader" android:text="@string/col_tier"/>
+                <TextView style="@style/CellHeader" android:text="@string/col_kwh"/>
+                <TextView style="@style/CellHeader" android:text="@string/col_price"/>
+                <TextView style="@style/CellHeader" android:text="@string/col_amount"/>
+            </TableRow>
+        </TableLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/pad" android:background="@drawable/bg_card"
+            android:orientation="vertical">
+            <TextView android:id="@+id/tvTienDien" style="@style/InfoLine"/>
+            <TextView android:id="@+id/tvGiamGia" style="@style/InfoLine"/>
+            <TextView android:id="@+id/tvThue" style="@style/InfoLine"/>
+            <TextView android:id="@+id/tvTongTien" style="@style/InfoLine"
+                android:textColor="@color/red" android:textStyle="bold"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/pad" android:orientation="horizontal"
+            android:weightSum="2">
+            <Button
+                android:id="@+id/btnQuayLai"
+                android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp" android:layout_weight="1"
+                android:background="@drawable/bg_button" android:text="@string/btn_back"
+                android:textColor="@color/white"/>
+            <Button
+                android:id="@+id/btnLuu"
+                android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_marginStart="5dp" android:layout_weight="1"
+                android:background="@drawable/bg_button" android:text="@string/btn_save"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,58 @@
+<resources>
+    <string name="app_name">DE04_24A1001D0372_BuiDoanThang</string>
+    <string name="title_main">TÍNH TIỀN ĐIỆN SINH HOẠT</string>
+    <string name="title_result">KẾT QUẢ TÍNH TIỀN</string>
+    <string name="title_history">LỊCH SỬ HÓA ĐƠN</string>
+
+    <string name="hint_code">Mã khách hàng (PDxxxxxxxx)</string>
+    <string name="hint_name">Tên chủ hộ</string>
+    <string name="hint_old">Chỉ số cũ</string>
+    <string name="hint_new">Chỉ số mới</string>
+    <string name="label_type">Loại khách hàng</string>
+
+    <string name="btn_clear">XÓA TRẮNG</string>
+    <string name="btn_calc">TÍNH TIỀN</string>
+    <string name="btn_history">LỊCH SỬ HÓA ĐƠN</string>
+    <string name="btn_back">QUAY LẠI</string>
+    <string name="btn_save">LƯU HÓA ĐƠN</string>
+
+    <string name="err_code">Mã KH gồm PD + 8 chữ số (VD: PD12345678)</string>
+    <string name="err_name">Vui lòng nhập tên chủ hộ</string>
+    <string name="err_index">Nhập số nguyên không âm</string>
+    <string name="err_new_less">Chỉ số mới phải ≥ chỉ số cũ</string>
+
+    <string name="info_code">Mã KH: %1$s</string>
+    <string name="info_owner">Chủ hộ: %1$s</string>
+    <string name="info_type">Loại KH: %1$s</string>
+    <string name="info_index">Chỉ số: %1$d → %2$d (%3$d kWh)</string>
+    <string name="info_date">Ngày lập: %1$s</string>
+
+    <string name="col_tier">Bậc</string>
+    <string name="col_kwh">kWh</string>
+    <string name="col_price">Đơn giá</string>
+    <string name="col_amount">Thành tiền</string>
+    <string name="tier_n">Bậc %1$d</string>
+    <string name="flat_rate">Đồng giá</string>
+
+    <string name="label_electric">Tiền điện</string>
+    <string name="label_discount">Giảm 20%% (hộ nghèo/chính sách)</string>
+    <string name="label_vat">Thuế GTGT (10%%)</string>
+    <string name="label_total">TỔNG THANH TOÁN</string>
+    <string name="money_fmt">%1$s đ</string>
+
+    <string name="stat_fmt">Tổng: %1$d hóa đơn – %2$s đ</string>
+    <string name="item_sub">%1$s • %2$d kWh • %3$s</string>
+    <string name="empty_history">Chưa có hóa đơn nào</string>
+    <string name="toast_saved">Đã lưu hóa đơn</string>
+
+    <string name="dlg_title">Xóa hóa đơn</string>
+    <string name="dlg_msg">Bạn có chắc muốn xóa hóa đơn của %1$s?</string>
+    <string name="dlg_delete">Xóa</string>
+    <string name="dlg_cancel">Hủy</string>
+
+    <string-array name="customer_types">
+        <item>Hộ gia đình</item>
+        <item>Hộ nghèo/chính sách</item>
+        <item>Kinh doanh</item>
+    </string-array>
+</resources>
